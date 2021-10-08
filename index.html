@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidenav</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- -----------------Bootstrap Styles--------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+<body>
+        <main class="main" id="main">
+            <header class="header">
+                <div class="wrap">
+                    <h3 class="logo">
+                        <a>
+                        AI
+                        </a>
+                    </h3>
+                    <nav class="menu">
+                        <ul>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                             <li>
+                                <a href="">About</a>
+                            </li> <li>
+                                <a href="">Collections</a>
+                            </li> <li>
+                                <a href="">Songs</a>
+                            </li> <li>
+                                <a href="">Links</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <a href="javascript:void(0);" class="sidemenu-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </a>
+
+                <div class="sidemenu">
+                    <a href="javascript:void(0);" class="close"></a>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                             <li>
+                                <a href="">About</a>
+                            </li> <li>
+                                <a href="">Collections</a>
+                            </li> <li>
+                                <a href="">Songs</a>
+                            </li> <li>
+                                <a href="">Links</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <footer>
+                       <p>Follow for more info...</p> 
+                    </footer>
+                </div>
+
+            </header>
+        </main>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script >
+                $('.sidemenu-toggler').click(function () {
+                    $('.sidemenu').addClass('active')
+                })
+
+                     $('.close').click(function () {
+                    $('.sidemenu').removeClass('active')
+                })
+        </script>
+
+    
+</body>
+</html>
